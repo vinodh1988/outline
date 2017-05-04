@@ -9,20 +9,12 @@ class Home extends React.Component
   render(){
     return(
       <div>
-      <h1> This is my first component created using node setup </h1>
-      <Link to="/">home</Link>
-      <Link to="/address">address</Link>
-      {this.props.children}
+        APP  is working
       </div>
     );
   
    }
 }
 
-ReactDOM.render(<Router history={browserHistory}>
-  <Route path="/" component={Home}>
-    <IndexRoute component={Page}></IndexRoute>
-    <Route path="/address" component={Address}></Route>
-  </Route>
-  </Router>,
+ReactDOM.render(<Home/>,
 document.getElementById('test'));
